@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\automovilController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/automoviles', automovilController::class);
+//Route::get('automoviles', [automovilController::class, 'index']);
+//Route::get('automoviles/create', [automovilController::class, 'create']);
+//Route::get('automoviles/message', [automovilController::class, 'message']);
