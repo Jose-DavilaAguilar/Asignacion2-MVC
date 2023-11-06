@@ -15,15 +15,12 @@ class CreateAutomovilsTable extends Migration
     {
         Schema::create('automoviles', function (Blueprint $table) {
             $table->id();
-            $table->string('matricula', 10)->unique();
+            $table->string('matricula', 25)->unique();
             $table->string('marca', 120);
             $table->string('modelo', 120);
             $table->string('color', 120);
             $table->string('precio', 120);
-            $table->unsignedBigInteger('nivel_id');
             $table->timestamps();
-
-            $table->foreign('nivel_id')->references('id')->on('niveles');
         });
     }
 

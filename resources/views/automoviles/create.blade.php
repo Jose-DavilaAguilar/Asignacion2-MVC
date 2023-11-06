@@ -53,7 +53,7 @@
             </div>
 
             <div class="mb-3 row">
-                <label for="precio" class="col-sm-2 col-form-label">precio:</label>
+                <label for="precio" class="col-sm-2 col-form-label">Precio:</label>
                 <div class="col-sm-5">
                     <input type="text" class="form-control" name="precio" id="precio" value="{{old('precio')}}" required>
                 </div>
